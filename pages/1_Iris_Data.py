@@ -62,33 +62,7 @@ else:
     st.write(df.describe())
 
 
-@st.cache_data
-def convert_df(df):
-    return df.to_csv().encode('utf-8')
 
-csv = convert_df(df)
-
-
-
-st.markdown("<br>",unsafe_allow_html=True)
-st.markdown("<h5 style='text-align: center';><b>Click to Downlaod the Dataset</b></h5>",unsafe_allow_html=True)
-col1, col2, col3 , col4, col5 = st.columns(5)
-
-with col1:
-    pass
-with col2:
-    pass
-with col4:
-    pass
-with col5:
-    pass
-with col3 :
-    center_button = st.download_button(
-     label="Download",
-     data=csv,
-     file_name='iris.csv',
-     mime='text/csv',
- )
 
 
 
