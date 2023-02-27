@@ -4,7 +4,6 @@ import pandas as pd
 import plotly.express as px
 import os
 import numpy as np
-import seaborn as seaborn
 import io
 
 # absolute path to this file
