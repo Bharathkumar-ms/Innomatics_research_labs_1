@@ -31,10 +31,6 @@ st.dataframe(df)
 
 
 
-
-
-df = pd.read_csv("resources\data\iris.csv")
-
 st.header(":blue[Details of the Dataset]")
 
 data_info = st.radio('Click to view the Details of the Dataset:',
